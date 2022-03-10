@@ -1,0 +1,84 @@
+G:\SQL2019\WebApplication1\WebApplication1\bin\ApplicationInsights.config
+G:\SQL2019\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+G:\SQL2019\WebApplication1\WebApplication1\bin\WebApplication1.dll
+G:\SQL2019\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+G:\SQL2019\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+G:\SQL2019\WebApplication1\WebApplication1\bin\Microsoft.AI.Agent.Intercept.dll
+G:\SQL2019\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.dll
+G:\SQL2019\WebApplication1\WebApplication1\bin\Microsoft.AI.PerfCounterCollector.dll
+G:\SQL2019\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+G:\SQL2019\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.dll
+G:\SQL2019\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.dll
+G:\SQL2019\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.dll
+G:\SQL2019\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+G:\SQL2019\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+G:\SQL2019\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+G:\SQL2019\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+G:\SQL2019\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+G:\SQL2019\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+G:\SQL2019\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+G:\SQL2019\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+G:\SQL2019\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+G:\SQL2019\WebApplication1\WebApplication1\bin\WebGrease.dll
+G:\SQL2019\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+G:\SQL2019\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+G:\SQL2019\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+G:\SQL2019\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+G:\SQL2019\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+G:\SQL2019\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+G:\SQL2019\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+G:\SQL2019\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+G:\SQL2019\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+G:\SQL2019\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.xml
+G:\SQL2019\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.xml
+G:\SQL2019\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.xml
+G:\SQL2019\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.xml
+G:\SQL2019\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.xml
+G:\SQL2019\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csprojResolveAssemblyReference.cache
+G:\SQL2019\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+G:\SQL2019\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\4th sem file\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.AssemblyReference.cache
+D:\4th sem file\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CoreCompileInputs.cache
+D:\4th sem file\WebApplication1\WebApplication1\obj\Debug\WebApplication1.dll
+D:\4th sem file\WebApplication1\WebApplication1\obj\Debug\WebApplication1.pdb
+D:\4th sem file\WebApplication1\WebApplication1\bin\ApplicationInsights.config
+D:\4th sem file\WebApplication1\WebApplication1\bin\WebApplication1.dll.config
+D:\4th sem file\WebApplication1\WebApplication1\bin\WebApplication1.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\WebApplication1.pdb
+D:\4th sem file\WebApplication1\WebApplication1\bin\Antlr3.Runtime.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\EntityFramework.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\Microsoft.AI.Agent.Intercept.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\Microsoft.AI.PerfCounterCollector.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\Microsoft.Web.Infrastructure.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\Newtonsoft.Json.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\System.Web.Helpers.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\System.Web.Mvc.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\System.Web.Optimization.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\System.Web.Razor.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\System.Web.WebPages.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\WebGrease.dll
+D:\4th sem file\WebApplication1\WebApplication1\bin\EntityFramework.xml
+D:\4th sem file\WebApplication1\WebApplication1\bin\EntityFramework.SqlServer.xml
+D:\4th sem file\WebApplication1\WebApplication1\bin\System.Web.Helpers.xml
+D:\4th sem file\WebApplication1\WebApplication1\bin\System.Web.Mvc.xml
+D:\4th sem file\WebApplication1\WebApplication1\bin\System.Web.Optimization.xml
+D:\4th sem file\WebApplication1\WebApplication1\bin\System.Web.Razor.xml
+D:\4th sem file\WebApplication1\WebApplication1\bin\System.Web.WebPages.xml
+D:\4th sem file\WebApplication1\WebApplication1\bin\System.Web.WebPages.Deployment.xml
+D:\4th sem file\WebApplication1\WebApplication1\bin\System.Web.WebPages.Razor.xml
+D:\4th sem file\WebApplication1\WebApplication1\bin\Antlr3.Runtime.pdb
+D:\4th sem file\WebApplication1\WebApplication1\bin\Newtonsoft.Json.xml
+D:\4th sem file\WebApplication1\WebApplication1\bin\Microsoft.ApplicationInsights.xml
+D:\4th sem file\WebApplication1\WebApplication1\bin\Microsoft.AI.DependencyCollector.xml
+D:\4th sem file\WebApplication1\WebApplication1\bin\Microsoft.AI.ServerTelemetryChannel.xml
+D:\4th sem file\WebApplication1\WebApplication1\bin\Microsoft.AI.WindowsServer.xml
+D:\4th sem file\WebApplication1\WebApplication1\bin\Microsoft.AI.Web.xml
+D:\4th sem file\WebApplication1\WebApplication1\obj\Debug\WebApplication1.csproj.CopyComplete
