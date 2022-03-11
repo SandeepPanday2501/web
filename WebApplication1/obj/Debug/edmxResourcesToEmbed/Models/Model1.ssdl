@@ -8,7 +8,15 @@
     <Property Name="EmployeeName" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="EmployeeAddress" Type="varchar" MaxLength="30" Nullable="false" />
   </EntityType>
+  <EntityType Name="student">
+    <Key>
+      <PropertyRef Name="StudentID" />
+    </Key>
+    <Property Name="StudentID" Type="int" Nullable="false" />
+    <Property Name="StudentName" Type="varchar" MaxLength="30" Nullable="false" />
+  </EntityType>
   <EntityContainer Name="webModelStoreContainer">
     <EntitySet Name="employee" EntityType="Self.employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="student" EntityType="Self.student" Schema="dbo" store:Type="Tables" />
   </EntityContainer>
 </Schema>

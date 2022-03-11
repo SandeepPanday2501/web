@@ -1,0 +1,45 @@
+﻿@model List<WebApplication1.Models.student>
+@{
+    ViewBag.Title = "views";
+    int sn=0;
+}
+
+<style>
+    table, th, td {
+        border: 2px solid;
+        background-color: black;
+        font-size: 12px;
+        color: white;
+    }
+
+   
+</style>
+
+<h2>Welcome</h2>
+<p>Table Data</p>
+
+<table class=" table" style="border:3px dashed blue;">
+    <tr>
+        <th>StudenttID</th>
+        <th>StudentName</th>
+       
+
+        @*
+            <tr>
+            <td>1</td>
+            <td>Shiroyasha</td>
+            <td>Kathmandu</td>
+            </tr>*@
+        @foreach (var data in Model)
+        {
+        <tr>
+
+            <td>@(++sn)</td>
+            <td>@(data.StudentName)</td>
+           
+
+        </tr>
+    }
+
+    </table>
+
