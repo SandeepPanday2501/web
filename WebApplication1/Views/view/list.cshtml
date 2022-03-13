@@ -1,9 +1,12 @@
 ﻿@model List<WebApplication1.Models.student>
-@{
-    ViewBag.Title = "views";
-    int sn=0;
-}
 
+
+
+@{
+    ViewBag.Title = "view";
+    int sn = 0;
+}
+<a href="@Url.Action("Create")">Add new record</a>
 <style>
     table, th, td {
         border: 2px solid;
@@ -12,17 +15,24 @@
         color: white;
     }
 
-   
+    form {
+        width: 100px;
+        display: inline-block;
+    }
+
+    input[type=submit] {
+        color: #9a9298;
+    }
 </style>
 
 <h2>Welcome</h2>
 <p>Table Data</p>
 
-<table class=" table" style="border:3px dashed blue;">
+<table class=" table" style="border:2px dashed blue;">
     <tr>
-        <th>StudenttID</th>
+        <th>StudentID</th>
         <th>StudentName</th>
-       
+        
 
         @*
             <tr>
@@ -36,10 +46,24 @@
 
             <td>@(++sn)</td>
             <td>@(data.StudentName)</td>
-           
+        
 
         </tr>
     }
 
     </table>
+
+    <style type="text/css">
+        label, input {
+            margin-top: 2px;
+        }
+
+        label {
+            margin-right: 2px;
+        }
+    </style>
+ 
+
+    
+
 

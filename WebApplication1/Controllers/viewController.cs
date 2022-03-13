@@ -9,6 +9,7 @@ namespace WebApplication1.Controllers
 {
     public class viewController : Controller
     {
+
         webEntities1 db;
 
         public viewController()
@@ -18,13 +19,23 @@ namespace WebApplication1.Controllers
 
 
         // GET: hello
-        public ActionResult views
-            ()
+        public ActionResult list()
         {
             List<student> all_data = db.students.ToList();
             return View(all_data);
         }
-        // GET: view
-       
+        public ActionResult Create()
+        {
+            return View();
+        }
+
+        public ActionResult SaveData(student student)
+        {
+            db.students.Add(student);
+            db.SaveChanges();
+
+            return RedirectToAction("list");
+        }
+
     }
 }

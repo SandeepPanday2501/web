@@ -146,6 +146,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\formController.cs" />
     <Compile Include="Controllers\helloController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\viewController.cs" />
@@ -230,12 +231,12 @@
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
     <Content Include="Views\hello\index.cshtml" />
-    <Content Include="Views\view\View.cshtml" />
-    <Content Include="Views\hello\views.cshtml" />
+    <Content Include="Views\view\list.cshtml" />
+    <Content Include="Views\view\create.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\views\" />
+    <Folder Include="Views\form\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff" />

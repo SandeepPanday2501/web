@@ -12,7 +12,7 @@
     <Key>
       <PropertyRef Name="StudentID" />
     </Key>
-    <Property Name="StudentID" Type="int" Nullable="false" />
+    <Property Name="StudentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="StudentName" Type="varchar" MaxLength="30" Nullable="false" />
   </EntityType>
   <EntityContainer Name="webModelStoreContainer">
