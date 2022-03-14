@@ -24,5 +24,29 @@ namespace WebApplication1.Controllers
             List<employee> all_data = db.employees.ToList();
             return View(all_data);
         }
+        public ActionResult Create2()
+        {
+            return View();
+        }
+        public ActionResult Edit(int ID)
+        {
+            employee old_data = db.employees.Find(ID);
+            return View(old_data);
+        }
+
+        public ActionResult SaveData(employee employee)
+        {
+            db.employees.Add(employee);
+            db.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
+        public ActionResult UpdateData(employee employee)
+        {
+           db.Entry(employee).State=System.Data.Entity.EntityState.Modified;
+            db.SaveChanges();
+
+            return RedirectToAction("Index");
+        }
     }
 }

@@ -6,6 +6,7 @@
     ViewBag.Title = "index";
     int sn = 0;
 }
+<a href="@Url.Action("Create2")">Add new record</a>
 <style>
     table, th, td {
         border: 2px solid;
@@ -30,6 +31,7 @@
         <th>EmployeeID</th>
         <th>EmployeeName</th>
         <th>EmployeeAddress</th>
+        <th>Edit</th>
 
         @*
             <tr>
@@ -44,6 +46,7 @@
             <td>@(++sn)</td>
             <td>@(data.EmployeeName)</td>
             <td>@(data.EmployeeAddress)</td>
+            <td><a href="@Url.Action("Edit", new {id=data.EmployeeID})">Edit</a></td>
 
         </tr>
     }

@@ -1,0 +1,37 @@
+﻿@model WebApplication1.Models.employee
+@{
+    ViewBag.Title = "Edit";
+}
+
+<h2>Edit</h2>
+
+<style>
+    input[type = "submit"]:hover {
+        color: firebrick;
+        background-color: chocolate;
+    }
+</style>
+
+
+@using (Html.BeginForm("UpdateData", "hello"))
+{
+    <input type="hidden" name="EmployeeID" value="@Model.EmployeeID"/>
+<label>Name:</label>
+<div>
+    <input type="text" name="EmployeeName" class="form-control">
+
+</div>
+<label>Address:</label>
+<div>
+    <input type="text" name="EmployeeAddress" class="form-control">
+
+</div>
+
+<div>
+    <br>
+    <input type="submit" class="btn btn-success" value="Update" />
+</div>
+}
+
+
+

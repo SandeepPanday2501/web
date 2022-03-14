@@ -9,7 +9,7 @@
           <Key>
             <PropertyRef Name="EmployeeID" />
           </Key>
-          <Property Name="EmployeeID" Type="int" Nullable="false" />
+          <Property Name="EmployeeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
           <Property Name="EmployeeName" Type="varchar" MaxLength="30" Nullable="false" />
           <Property Name="EmployeeAddress" Type="varchar" MaxLength="30" Nullable="false" />
         </EntityType>
@@ -36,7 +36,7 @@
           <Key>
             <PropertyRef Name="EmployeeID" />
           </Key>
-          <Property Name="EmployeeID" Type="Int32" Nullable="false" />
+          <Property Name="EmployeeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
           <Property Name="EmployeeName" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
           <Property Name="EmployeeAddress" Type="String" Nullable="false" MaxLength="30" FixedLength="false" Unicode="false" />
         </EntityType>

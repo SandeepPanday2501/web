@@ -4,7 +4,7 @@
     <Key>
       <PropertyRef Name="EmployeeID" />
     </Key>
-    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="EmployeeName" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="EmployeeAddress" Type="varchar" MaxLength="30" Nullable="false" />
   </EntityType>

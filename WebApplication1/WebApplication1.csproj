@@ -233,6 +233,8 @@
     <Content Include="Views\hello\index.cshtml" />
     <Content Include="Views\view\list.cshtml" />
     <Content Include="Views\view\create.cshtml" />
+    <Content Include="Views\hello\create2.cshtml" />
+    <Content Include="Views\hello\Edit.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

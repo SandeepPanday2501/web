@@ -6,7 +6,7 @@
     <edmx:Diagrams>
       <Diagram DiagramId="fcb09145e5e9498b82133d68fcc53b08" Name="Diagram1">
         <EntityTypeShape EntityType="webModel.employee" Width="1.5" PointX="0.75" PointY="0.75" />
-        <EntityTypeShape EntityType="webModel.student" Width="1.5" PointX="3.375" PointY="0.75" />
+        <EntityTypeShape EntityType="webModel.student" Width="1.5" PointX="2.75" PointY="0.75" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>
