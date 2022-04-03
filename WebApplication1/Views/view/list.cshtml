@@ -32,23 +32,26 @@
     <tr>
         <th>StudentID</th>
         <th>StudentName</th>
-        
+        <th>Edit</th>
+        <th>Delete</th>
 
         @*
-            <tr>
-            <td>1</td>
-            <td>Shiroyasha</td>
-            <td>Kathmandu</td>
-            </tr>*@
+        <tr>
+        <td>1</td>
+        <td>Shiroyasha</td>
+        <td>Kathmandu</td>
+        </tr>*@
         @foreach (var data in Model)
         {
-        <tr>
+<tr>
 
-            <td>@(++sn)</td>
-            <td>@(data.StudentName)</td>
-        
+        <td>@(++sn)</td>
+        <td>@(data.StudentName)</td>
+        <td><a href="@Url.Action("edit2", new {id=data.StudentID})">Edit</a></td>
+        <td><a href="@Url.Action("delete2", new {id=data.StudentID})">Delete</a></td>
 
-        </tr>
+
+    </tr>
     }
 
     </table>

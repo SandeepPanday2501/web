@@ -1,0 +1,32 @@
+﻿@model WebApplication1.Models.student
+@{
+    ViewBag.Title = "edit2";
+}
+
+<h2>Edit</h2>
+
+<style>
+    input[type = "submit"]:hover {
+        color: firebrick;
+        background-color: chocolate;
+    }
+</style>
+
+
+@using (Html.BeginForm("UpdateData", "view"))
+{
+    <input type="hidden" name="StudentID" value="@Model.StudentID" />
+    <label>Name:</label>
+    <div>
+        <input type="text" name="StudentName" class="form-control">
+
+    </div>
+
+    <div>
+        <br>
+        <input type="submit" class="btn btn-success" value="Update" />
+    </div>
+}
+
+
+

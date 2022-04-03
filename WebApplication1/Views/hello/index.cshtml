@@ -32,6 +32,7 @@
         <th>EmployeeName</th>
         <th>EmployeeAddress</th>
         <th>Edit</th>
+        <th>Delete</th>
 
         @*
             <tr>
@@ -41,14 +42,15 @@
             </tr>*@
         @foreach (var data in Model)
         {
-        <tr>
+    <tr>
 
-            <td>@(++sn)</td>
-            <td>@(data.EmployeeName)</td>
-            <td>@(data.EmployeeAddress)</td>
-            <td><a href="@Url.Action("Edit", new {id=data.EmployeeID})">Edit</a></td>
+        <td>@(++sn)</td>
+        <td>@(data.EmployeeName)</td>
+        <td>@(data.EmployeeAddress)</td>
+        <td><a href="@Url.Action("Edit", new {id=data.EmployeeID})">Edit</a></td>
+        <td><a href="@Url.Action("delete", new {id=data.EmployeeID})">Delete</a></td>
 
-        </tr>
+    </tr>
     }
 
     </table>
@@ -64,7 +66,7 @@
     </style>
     <form>
         <fieldset>
-            <legend>Information</legend>
+            <legend>Create Account</legend>
             <label>Full Name</label>
             <input type="text"><br>
             <label>Age</label>

@@ -48,5 +48,13 @@ namespace WebApplication1.Controllers
 
             return RedirectToAction("Index");
         }
+        public ActionResult delete(int ID)
+        {
+            employee data = db.employees.Find(ID);
+            db.employees.Remove(data);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
     }
 }
