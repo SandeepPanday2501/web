@@ -8,6 +8,15 @@
     <Property Name="EmployeeName" Type="varchar" MaxLength="30" Nullable="false" />
     <Property Name="EmployeeAddress" Type="varchar" MaxLength="30" Nullable="false" />
   </EntityType>
+  <EntityType Name="employee_salary_date">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmployeeID" Type="int" Nullable="false" />
+    <Property Name="SalaryPaid" Type="decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="PaidDate" Type="datetime" Nullable="false" />
+  </EntityType>
   <EntityType Name="student">
     <Key>
       <PropertyRef Name="StudentID" />
@@ -15,8 +24,41 @@
     <Property Name="StudentID" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
     <Property Name="StudentName" Type="varchar" MaxLength="30" Nullable="false" />
   </EntityType>
+  <Association Name="FK_employee_salary_date_employee_salary_date">
+    <End Role="employee_salary_date" Type="Self.employee_salary_date" Multiplicity="1" />
+    <End Role="employee_salary_date1" Type="Self.employee_salary_date" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="employee_salary_date">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="employee_salary_date1">
+        <PropertyRef Name="EmployeeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_employee_salary_date_employee_salary_date1">
+    <End Role="employee_salary_date" Type="Self.employee_salary_date" Multiplicity="1" />
+    <End Role="employee_salary_date1" Type="Self.employee_salary_date" Multiplicity="0..1" />
+    <ReferentialConstraint>
+      <Principal Role="employee_salary_date">
+        <PropertyRef Name="ID" />
+      </Principal>
+      <Dependent Role="employee_salary_date1">
+        <PropertyRef Name="ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
   <EntityContainer Name="webModelStoreContainer">
     <EntitySet Name="employee" EntityType="Self.employee" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="employee_salary_date" EntityType="Self.employee_salary_date" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="student" EntityType="Self.student" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_employee_salary_date_employee_salary_date" Association="Self.FK_employee_salary_date_employee_salary_date">
+      <End Role="employee_salary_date" EntitySet="employee_salary_date" />
+      <End Role="employee_salary_date1" EntitySet="employee_salary_date" />
+    </AssociationSet>
+    <AssociationSet Name="FK_employee_salary_date_employee_salary_date1" Association="Self.FK_employee_salary_date_employee_salary_date1">
+      <End Role="employee_salary_date" EntitySet="employee_salary_date" />
+      <End Role="employee_salary_date1" EntitySet="employee_salary_date" />
+    </AssociationSet>
   </EntityContainer>
 </Schema>

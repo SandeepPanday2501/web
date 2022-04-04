@@ -10,6 +10,16 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
+    <EntitySetMapping Name="employee_salary_date">
+      <EntityTypeMapping TypeName="webModel.employee_salary_date">
+        <MappingFragment StoreEntitySet="employee_salary_date">
+          <ScalarProperty Name="PaidDate" ColumnName="PaidDate" />
+          <ScalarProperty Name="SalaryPaid" ColumnName="SalaryPaid" />
+          <ScalarProperty Name="EmployeeID" ColumnName="EmployeeID" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
     <EntitySetMapping Name="students">
       <EntityTypeMapping TypeName="webModel.student">
         <MappingFragment StoreEntitySet="student">

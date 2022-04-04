@@ -1,0 +1,76 @@
+﻿@model List<WebApplication1.Models.employee_salary_date>
+
+
+
+@{
+    ViewBag.Title = "sali";
+    int sn = 0;
+}
+<h2>Emplo</h2>
+<p>
+    @Html.ActionLink("Create New","Create")
+</p>
+<style>
+    table, th, td {
+        border: 2px solid;
+        background-color: black;
+        font-size: 12px;
+        color: white;
+    }
+
+    form {
+        width: 100px;
+        display: inline-block;
+    }
+
+    input[type=submit] {
+        color: #9a9298;
+    }
+</style>
+
+<h2>Welcome</h2>
+<p>Table Data</p>
+
+<table class=" table" style="border:2px dashed blue;">
+    <tr>
+        <th>SN</th>
+        <th>EmployeeID</th>
+        <th>Salary Amount</th>
+        <th>Paid Date</th>
+        <th>Action</th>
+        </tr>
+
+    @{ int sn = 0;}
+        @foreach (var item in Model)
+        {
+<tr>
+
+    <td>@(++sn)</td>
+    <td></td>
+    <td>@item.SalaryPaid</td>
+    <td>@item.PaidDate</td>
+
+
+    @Html.ActionLink("Edit", "Edit", new { id = item.ID })
+    @Html.ActionLink("Details", "Details", new { id = item.ID })
+    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+
+</tr>
+    }
+
+    </table>
+
+    <style type="text/css">
+        label, input {
+            margin-top: 2px;
+        }
+
+        label {
+            margin-right: 2px;
+        }
+    </style>
+
+
+
+
+
