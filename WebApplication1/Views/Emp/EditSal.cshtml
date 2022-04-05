@@ -1,17 +1,17 @@
 ﻿
 @{
-    ViewBag.Title = "create3";
+    ViewBag.Title = "EditSal";
 }
 
-<h2>create3</h2>
-@using (Html.BeginForm("SaveData", "Emp", FormMethod.Post))
+<h2>EditSal</h2>
+@using (Html.BeginForm("UpdateData1", "Emp"))
 {
 <form action="Create">
-    <label>EmployeeID:</label>
-    <div>
-      @Html.DropDownList("employeelist", null, "Select", htmlAttributes: new { @Name = "EmployeeID" })
-        @*<input type="text" name="id" class="form-control">*@
-    </div>
+    @*<!--label>EmployeeID:</label>
+        <div>
+            @Html.DropDownList("employeelist", null, "Select", htmlAttributes: new { @Name = "EmployeeID" })-->
+            @*<input type="text" name="id" class="form-control">
+    <!--</div>-->*@
     <label>Salary Paid:</label>
     <div>
         <input type="text" name="SalaryPaid" class="form-control">
@@ -26,3 +26,4 @@
     </div>
 </form>
 }
+

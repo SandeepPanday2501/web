@@ -3,19 +3,22 @@
 
 
 @{
-    ViewBag.Title = "sali";
+    ViewBag.Title = "Emp";
     int sn = 0;
 }
 <h2>Emplo</h2>
-<p>
-    @Html.ActionLink("Create New","Create")
-</p>
+@*<p>
+    @Html.ActionLink("Create New","create3")
+</p>*@
+
+<a href=" @Url.Action("create3")">Add New Item</a>
 <style>
     table, th, td {
         border: 2px solid;
         background-color: black;
         font-size: 12px;
         color: white;
+        padding: 10px;
     }
 
     form {
@@ -40,25 +43,31 @@
         <th>Action</th>
         </tr>
 
-    @{ int sn = 0;}
         @foreach (var item in Model)
         {
 <tr>
 
     <td>@(++sn)</td>
-    <td></td>
+    <td>@item.employee.EmployeeName</td>
+    <td>@item.EmployeeID</td>
     <td>@item.SalaryPaid</td>
     <td>@item.PaidDate</td>
 
+    <td>
 
-    @Html.ActionLink("Edit", "Edit", new { id = item.ID })
-    @Html.ActionLink("Details", "Details", new { id = item.ID })
-    @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+        <a href="@Url.Action("Editsal", new {id =item.ID })">Edit</a>
+        <a href="@Url.Action("delete2", new {id =item.ID })">Delete</a>
 
+        @*@Html.ActionLink("EditSal", "EditSal", new { id = item.ID })
+        @Html.ActionLink("Details", "Details", new { id = item.ID })
+        @Html.ActionLink("Delete", "Delete", new { id = item.ID })*@
+    </td>
+    
 </tr>
     }
 
     </table>
+
 
     <style type="text/css">
         label, input {

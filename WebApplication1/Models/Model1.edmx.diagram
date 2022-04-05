@@ -5,11 +5,10 @@
     <!-- Diagram content (shape and connector positions) -->
     <edmx:Diagrams>
       <Diagram DiagramId="fcb09145e5e9498b82133d68fcc53b08" Name="Diagram1">
-        <EntityTypeShape EntityType="webModel.employee" Width="1.5" PointX="3.125" PointY="0.5" />
-        <EntityTypeShape EntityType="webModel.employee_salary_date" Width="1.5" PointX="1.125" PointY="0.5" />
-        <EntityTypeShape EntityType="webModel.student" Width="1.5" PointX="3.125" PointY="3.5" />
+        <EntityTypeShape EntityType="webModel.employee" Width="1.5" PointX="0.75" PointY="1" />
+        <EntityTypeShape EntityType="webModel.employee_salary_date" Width="1.5" PointX="3" PointY="0.875" />
+        <EntityTypeShape EntityType="webModel.student" Width="1.5" PointX="0.75" PointY="3.75" />
         <AssociationConnector Association="webModel.FK_employee_salary_date_employee_salary_date" />
-        <AssociationConnector Association="webModel.FK_employee_salary_date_employee_salary_date1" />
       </Diagram>
     </edmx:Diagrams>
   </edmx:Designer>

@@ -25,26 +25,14 @@
     <Property Name="StudentName" Type="varchar" MaxLength="30" Nullable="false" />
   </EntityType>
   <Association Name="FK_employee_salary_date_employee_salary_date">
-    <End Role="employee_salary_date" Type="Self.employee_salary_date" Multiplicity="1" />
-    <End Role="employee_salary_date1" Type="Self.employee_salary_date" Multiplicity="*" />
+    <End Role="employee" Type="Self.employee" Multiplicity="1" />
+    <End Role="employee_salary_date" Type="Self.employee_salary_date" Multiplicity="*" />
     <ReferentialConstraint>
-      <Principal Role="employee_salary_date">
-        <PropertyRef Name="ID" />
-      </Principal>
-      <Dependent Role="employee_salary_date1">
+      <Principal Role="employee">
         <PropertyRef Name="EmployeeID" />
-      </Dependent>
-    </ReferentialConstraint>
-  </Association>
-  <Association Name="FK_employee_salary_date_employee_salary_date1">
-    <End Role="employee_salary_date" Type="Self.employee_salary_date" Multiplicity="1" />
-    <End Role="employee_salary_date1" Type="Self.employee_salary_date" Multiplicity="0..1" />
-    <ReferentialConstraint>
-      <Principal Role="employee_salary_date">
-        <PropertyRef Name="ID" />
       </Principal>
-      <Dependent Role="employee_salary_date1">
-        <PropertyRef Name="ID" />
+      <Dependent Role="employee_salary_date">
+        <PropertyRef Name="EmployeeID" />
       </Dependent>
     </ReferentialConstraint>
   </Association>
@@ -53,12 +41,8 @@
     <EntitySet Name="employee_salary_date" EntityType="Self.employee_salary_date" Schema="dbo" store:Type="Tables" />
     <EntitySet Name="student" EntityType="Self.student" Schema="dbo" store:Type="Tables" />
     <AssociationSet Name="FK_employee_salary_date_employee_salary_date" Association="Self.FK_employee_salary_date_employee_salary_date">
+      <End Role="employee" EntitySet="employee" />
       <End Role="employee_salary_date" EntitySet="employee_salary_date" />
-      <End Role="employee_salary_date1" EntitySet="employee_salary_date" />
-    </AssociationSet>
-    <AssociationSet Name="FK_employee_salary_date_employee_salary_date1" Association="Self.FK_employee_salary_date_employee_salary_date1">
-      <End Role="employee_salary_date" EntitySet="employee_salary_date" />
-      <End Role="employee_salary_date1" EntitySet="employee_salary_date" />
     </AssociationSet>
   </EntityContainer>
 </Schema>

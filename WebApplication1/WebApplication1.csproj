@@ -242,6 +242,7 @@
     <Content Include="Views\view\edit2.cshtml" />
     <Content Include="Views\Emp\Emplo.cshtml" />
     <Content Include="Views\Emp\create3.cshtml" />
+    <Content Include="Views\Emp\EditSal.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

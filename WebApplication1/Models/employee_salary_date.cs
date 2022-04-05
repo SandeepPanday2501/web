@@ -14,21 +14,11 @@ namespace WebApplication1.Models
     
     public partial class employee_salary_date
     {
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public employee_salary_date()
-        {
-            this.employee_salary_date1 = new HashSet<employee_salary_date>();
-        }
-    
         public int ID { get; set; }
         public int EmployeeID { get; set; }
         public decimal SalaryPaid { get; set; }
         public System.DateTime PaidDate { get; set; }
     
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<employee_salary_date> employee_salary_date1 { get; set; }
-        public virtual employee_salary_date employee_salary_date2 { get; set; }
-        public virtual employee_salary_date employee_salary_date11 { get; set; }
-        public virtual employee_salary_date employee_salary_date3 { get; set; }
+        public virtual employee employee { get; set; }
     }
 }
