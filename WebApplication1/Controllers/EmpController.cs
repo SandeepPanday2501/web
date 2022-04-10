@@ -39,6 +39,8 @@ namespace WebApplication1.Controllers
         }
          public ActionResult EditSal(int ID)
         {
+            var employeelist = db.employees.ToList();
+            ViewBag.employeelist = new SelectList(employeelist, "EmployeeID", "EmployeeName");
             employee_salary_date data = db.employee_salary_date.Find(ID);
             return View(data);
 

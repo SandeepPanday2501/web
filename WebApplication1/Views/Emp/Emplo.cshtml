@@ -37,6 +37,7 @@
 <table class=" table" style="border:2px dashed blue;">
     <tr>
         <th>SN</th>
+        <th>EmployeeName</th>
         <th>EmployeeID</th>
         <th>Salary Amount</th>
         <th>Paid Date</th>
@@ -65,6 +66,11 @@
     
 </tr>
     }
+
+    <tr>
+        <td>Total</td>
+        <td colspan="3">@Model.Sum(x=>x.SalaryPaid)</td>
+    </tr>
 
     </table>
 
