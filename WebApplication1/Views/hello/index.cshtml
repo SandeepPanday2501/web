@@ -14,84 +14,93 @@
         font-size: 12px;
         color: white;
     }
-    form{
-        width:100px;
-        display:inline-block;
+
+    form {
+        width: 100px;
+        display: inline-block;
     }
-    input[type=submit]{
-    color:#9a9298;
+
+    input[type=submit] {
+        color: #9a9298;
     }
 </style>
 
-<h2>Welcome</h2>
-<p>Table Data</p>
+@using (Html.BeginForm("Index", null, FormMethod.Get))
+{
+    <b>Search Option:</b><br>@Html.RadioButton("Option", "Name")<text>Name</text>
+    <br>
+  @Html.RadioButton("Option", "ID")<text>ID</text> @Html.TextBox("Search")
+    <input type="submit" name="submit" value="Search" />
+}
+    <h2>Welcome</h2>
+    <p>Table Data</p>
 
-<table class=" table" style="border:3px dashed blue;">
-    <tr>
-        <th>EmployeeID</th>
-        <th>EmployeeName</th>
-        <th>EmployeeAddress</th>
-        <th>Edit</th>
-        <th>Delete</th>
+    <table class=" table" style="border:3px dashed blue;">
+        <tr>
+            <th>EmployeeID</th>
+            <th>EmployeeName</th>
+            <th>EmployeeAddress</th>
+            <th>Edit</th>
+            <th>Delete</th>
 
-        @*
+            @*
+                <tr>
+                <td>1</td>
+                <td>Shiroyasha</td>
+                <td>Kathmandu</td>
+                </tr>*@
+            @foreach (var data in Model)
+            {
             <tr>
-            <td>1</td>
-            <td>Shiroyasha</td>
-            <td>Kathmandu</td>
-            </tr>*@
-        @foreach (var data in Model)
-        {
-    <tr>
 
-        <td>@(++sn)</td>
-        <td>@(data.EmployeeName)</td>
-        <td>@(data.EmployeeAddress)</td>
-        <td><a href="@Url.Action("Edit", new {id=data.EmployeeID})">Edit</a></td>
-        <td><a href="@Url.Action("delete", new {id=data.EmployeeID})">Delete</a></td>
+                <td>@(++sn)</td>
+                <td>@(data.EmployeeName)</td>
+                <td>@(data.EmployeeAddress)</td>
+                <td><a href="@Url.Action("Edit", new {id=data.EmployeeID})">Edit</a></td>
+                <td><a href="@Url.Action("delete", new {id=data.EmployeeID})">Delete</a></td>
 
-    </tr>
-    }
+            </tr>
+        }
 
-    </table>
+        </table>
 
-    <style type="text/css">
-    label, input {
-    margin-top: 2px;
-    }
+        <style type="text/css">
+            label, input {
+                margin-top: 2px;
+            }
 
-    label {
-    margin-right: 2px;
-    }
-    </style>
-    <form>
-        <fieldset>
-            <legend>Create Account</legend>
-            <label>Full Name</label>
-            <input type="text"><br>
-            <label>Age</label>
-            <input type="text"><br>
-            <label>Address</label>
-            <input type="text"><br>
-            <label>Email</label>
-            <input type="text"><br>
-            <label>Password</label>
-            <input type="Password"><br>
-            <label>Phone</label>
-            <input type="text"><br>
+            label {
+                margin-right: 2px;
+            }
+        </style>
+        <form>
+            <fieldset>
+                <legend>Create Account</legend>
+                <label>Full Name</label>
+                <input type="text"><br>
+                <label>Age</label>
+                <input type="text"><br>
+                <label>Address</label>
+                <input type="text"><br>
+                <label>Email</label>
+                <input type="text"><br>
+                <label>Password</label>
+                <input type="Password"><br>
+                <label>Phone</label>
+                <input type="text"><br>
 
-            <label>Gender</label>
-            <input type="radio" name="Gender">
-            <label>Male</label>
-            <input type="radio" name="Gender">
-            <label>Female</label>
-            <input type="radio" name="Gender">
-            <label>Rather not specify</label>
-            <br> <input type="submit" value="Submit">
+                <label>Gender</label>
+                <input type="radio" name="Gender">
+                <label>Male</label>
+                <input type="radio" name="Gender">
+                <label>Female</label>
+                <input type="radio" name="Gender">
+                <label>Rather not specify</label>
+                <br> <input type="submit" value="Submit">
 
 
-        </fieldset>
+            </fieldset>
 
-    </form>
+        </form>
 
 

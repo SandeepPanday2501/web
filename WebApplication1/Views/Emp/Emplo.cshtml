@@ -2,14 +2,15 @@
 
 
 
+
 @{
     ViewBag.Title = "Emp";
     int sn = 0;
 }
 <h2>Emplo</h2>
 @*<p>
-    @Html.ActionLink("Create New","create3")
-</p>*@
+        @Html.ActionLink("Create New","create3")
+    </p>*@
 
 <a href=" @Url.Action("create3")">Add New Item</a>
 <style>
@@ -31,6 +32,15 @@
     }
 </style>
 
+}
+@using (Html.BeginForm("Emplo", null, FormMethod.Get))
+{
+    //For Search Option
+    <b>Search Options:</b>@Html.RadioButton("option", "name")<text>Name</text>
+    @Html.RadioButton("option","id")<text>id</text> @Html.TextBox("search")
+    <input type="submit" name="submit" value="Search"/>
+}
+
 <h2>Welcome</h2>
 <p>Table Data</p>
 
@@ -42,48 +52,48 @@
         <th>Salary Amount</th>
         <th>Paid Date</th>
         <th>Action</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+
+            <td>@(++sn)</td>
+            <td>@item.employee.EmployeeName</td>
+            <td>@item.EmployeeID</td>
+            <td>@item.SalaryPaid</td>
+            <td>@item.PaidDate</td>
+
+            <td>
+
+                <a href="@Url.Action("Editsal", new {id =item.ID })">Edit</a>
+                <a href="@Url.Action("delete2", new {id =item.ID })">Delete</a>
+
+                @*@Html.ActionLink("EditSal", "EditSal", new { id = item.ID })
+                    @Html.ActionLink("Details", "Details", new { id = item.ID })
+                    @Html.ActionLink("Delete", "Delete", new { id = item.ID })*@
+            </td>
+
         </tr>
-
-        @foreach (var item in Model)
-        {
-<tr>
-
-    <td>@(++sn)</td>
-    <td>@item.employee.EmployeeName</td>
-    <td>@item.EmployeeID</td>
-    <td>@item.SalaryPaid</td>
-    <td>@item.PaidDate</td>
-
-    <td>
-
-        <a href="@Url.Action("Editsal", new {id =item.ID })">Edit</a>
-        <a href="@Url.Action("delete2", new {id =item.ID })">Delete</a>
-
-        @*@Html.ActionLink("EditSal", "EditSal", new { id = item.ID })
-        @Html.ActionLink("Details", "Details", new { id = item.ID })
-        @Html.ActionLink("Delete", "Delete", new { id = item.ID })*@
-    </td>
-    
-</tr>
     }
 
     <tr>
         <td>Total</td>
-        <td colspan="3">@Model.Sum(x=>x.SalaryPaid)</td>
+        <td colspan="3">@Model.Sum(x => x.SalaryPaid)</td>
     </tr>
 
-    </table>
+</table>
 
 
-    <style type="text/css">
-        label, input {
-            margin-top: 2px;
-        }
+<style type="text/css">
+    label, input {
+        margin-top: 2px;
+    }
 
-        label {
-            margin-right: 2px;
-        }
-    </style>
+    label {
+        margin-right: 2px;
+    }
+</style>
 
 
 

@@ -19,10 +19,28 @@ namespace WebApplication1.Controllers
 
 
         // GET: hello
+        public ActionResult Index(string option, string search)
+        {
+            if (option == "name")
+            {
+                return View(db.employees.Where(x => x.EmployeeName.StartsWith(search) || search == null).ToList());
+            }
+            else if (option == "id")
+            {
+                return View(db.employees.Where(x => x.EmployeeID.ToString().Equals(search) || search == null).ToList());
+            }
+            else
+            {
+                List<employee> alldata = db.employees.ToList();
+                return View(alldata);
+            }
+        
+        }
         public ActionResult Emplo()
         {
-            var employee_salary_date = db.employee_salary_date.ToList();
-            return View(employee_salary_date);
+
+          var employee_salary_date = db.employee_salary_date.ToList();
+          return View(employee_salary_date);
         }
         public ActionResult create3()
         {

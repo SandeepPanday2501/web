@@ -19,11 +19,20 @@ namespace WebApplication1.Controllers
 
 
         // GET: hello
-        public ActionResult Index()
+        public ActionResult Index(string option, string search)
         {
-            List<employee> all_data = db.employees.ToList();
-            return View(all_data);
+            if (option == "Name")
+            {
+                return View(db.employees.Where(x => x.EmployeeName.StartsWith(search) || search == null).ToList());
+            }
+            else
+            {
+                return View(db.employees.Where(x => x.EmployeeName == search || search == null).ToList());
+            }
+           // List<employee> all_data = db.employees.ToList();
+            //return View(all_data);
         }
+
         public ActionResult Create2()
         {
             return View();

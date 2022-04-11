@@ -6,27 +6,27 @@
 <h2>EditSal</h2>
 @using (Html.BeginForm("UpdateData1", "Emp"))
 {
-    <input type="hidden" name="ID" value="@Model.ID"/>
+    <input type="hidden" name="ID" value="@Model.ID" />
 
-<form action="Create">
-    @Html.DropDownList("employeelist", null, "Select", htmlAttributes: new { @Name = "EmployeeID" })
-    @*<!--label>EmployeeID:</label>
-            <div>
-                @Html.DropDownList("employeelist", null, "Select", htmlAttributes: new { @Name = "EmployeeID" })-->
-                @*<input type="text" name="id" class="form-control">
-        <!--</div>-->*@
-    <label>Salary Paid:</label>
-    <div>
-        <input type="text" name="SalaryPaid" class="form-control">
-    </div>
-    <label>Paid Date:</label>
-    <div>
-        <input type="date" name="PaidDate" class="form-control">
-    </div>
+    <form action="Create">
+        @Html.DropDownList("employeelist", null, "Select", htmlAttributes: new { @Name = "EmployeeID" })
+        @*<!--label>EmployeeID:</label>
+                <div>
+                    @Html.DropDownList("employeelist", null, "Select", htmlAttributes: new { @Name = "EmployeeID" })-->
+                    @*<input type="text" name="id" class="form-control">
+            <!--</div>-->*@
+        <label>Salary Paid:</label>
+        <div>
+            <input type="text" name="SalaryPaid" class="form-control">
+        </div>
+        <label>Paid Date:</label>
+        <div>
+            <input type="date" name="PaidDate" class="form-control">
+        </div>
 
-    <div>
-        <input type="submit" class="btn btn-success" value="Save" />
-    </div>
-</form>
+        <div>
+            <input type="submit" class="btn btn-success" value="Save" />
+        </div>
+    </form>
 }
 
